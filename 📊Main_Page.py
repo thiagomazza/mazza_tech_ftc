@@ -37,7 +37,7 @@ df_aux['Country Code'] = df['Country Code'].replace(COUNTRIES)
 st.set_page_config(page_title="Fome Zero!",page_icon="📊", layout="wide")
 
 # Função para criar a barra lateral
-image = Image.open("../img/logo_2.png")
+image = Image.open("../img/Logo_2.png")
 col1, col2 = st.sidebar.columns([1, 2], gap="small")
 col1.image(image, width=100)
 col2.markdown("# Fome Zero")
