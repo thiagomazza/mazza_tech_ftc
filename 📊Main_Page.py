@@ -45,7 +45,7 @@ st.sidebar.markdown("## Filtros")
 countries = st.sidebar.multiselect(
     "Escolha os Paises que deseja filtrar:",
     df_aux.loc[:, "Country Code"].unique().tolist(),
-    default=[],
+    default=df_aux.loc[:, "Country Code"].unique().tolist(),
     )
 
 # Filtro do DataFrame com base nos países selecionados
